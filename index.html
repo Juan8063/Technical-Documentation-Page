@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed Page</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+  <style>
+    #navbar {
+  text-align: left;
+  position: fixed;
+  width: 200px;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: red;
+  padding: 10px;
+}
+
+.main-section {
+  text-align: center;
+  margin: 50px;
+  margin-left: 220px; /* Prevents content from being overlapped by navbar */
+}
+
+@media screen and (max-width: 600px) {
+  #navbar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  .main-section {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <main id="main-doc">
+    <nav id="navbar">
+      <header>Navbar</header>
+      <p><a class="nav-link" href="#Section_1">Section 1</a></p>
+      <p><a class="nav-link" href="#Section_2">Section 2</a></p> 
+      <p><a class="nav-link" href="#Section_3">Section 3</a></p>
+      <p><a class="nav-link" href="#Section_4">Section 4</a></p>
+      <p><a class="nav-link" href="#Section_5">Section 5</a></p>
+    </nav>
+
+    <section class="main-section" id="Section_1">
+      <header>Section 1</header>
+      <p>This is section 1</p>
+      <code></code>
+      <ul>
+        <li>This and that</li>
+        <p></p>
+        <p></p>
+        <p></p>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Section_2">
+      <header>Section 2</header>
+      <p>This is section 2</p>
+      <code></code>
+      <ul>
+        <li>Yeah</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Section_3">
+      <header>Section 3</header>
+      <p>This is section 3</p>
+      <p>idk</p>
+      <code></code>
+      <ul>
+        <li>Nxt</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Section_4">
+      <header>Section 4</header>
+      <p>Section 4?</p>
+      <p>Yes</p>
+      <code></code>
+      <ul>
+        <li>Listing</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Section_5">
+      <header>Section 5</header>
+      <p>Is this section 5?</p>
+      <p>Yes</p>
+      <code></code>
+      <ul>
+        <li>Indeed</li>
+      </ul>
+    </section>
+
+  </main>
+</body>
+</html>
+CSS
+#navbar{
+  text-align: left;
+  position:fixed;
+  display:grid;
+}
+.main-section{
+  text-align:center;
+margin:50px
+}
+@media screen and (min-width: 200px){
+  #navbar{
+    background-color: red;
+
+  }
+}
